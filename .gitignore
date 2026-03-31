@@ -1,0 +1,47 @@
+# Node.js / React
+client/node_modules/
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.env.*
+!.env.example
+client/build/
+client/dist/
+
+# Java / Maven (Spring Boot)
+server-java/target/
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+*.log
+*.zip
+*.tar.gz
+*.rar
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.iml
+*.iws
+*.swp
+*.swo
+.settings/
+.classpath
+.project
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary Folders
+tmp/
+c:/tmp/
