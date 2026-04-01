@@ -1,7 +1,6 @@
 services:
   - type: web
     name: farmers-backend
-    runtime: docker
     rootDir: server-java
     buildCommand: mvn clean install
     startCommand: java -jar target/backend-0.0.1-SNAPSHOT.jar
