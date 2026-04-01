@@ -1,9 +1,9 @@
-FROM eclipse-temurin:17-jdk
+FROM maven:3.9.6-eclipse-temurin-17
 
 WORKDIR /app
 
 COPY . .
 
-RUN ./mvnw clean install || mvn clean install
+RUN mvn clean install
 
 CMD ["java", "-jar", "target/backend-0.0.1-SNAPSHOT.jar"]
