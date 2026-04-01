@@ -1,4 +1,9 @@
 FROM eclipse-temurin:17-jdk
+
 WORKDIR /app
-COPY target/backend-0.0.1-SNAPSHOT.jar app.jar
-ENTRYPOINT ["java","-jar","/app/app.jar"]
+
+COPY . .
+
+RUN ./mvnw clean install || mvn clean install
+
+CMD ["java", "-jar", "target/backend-0.0.1-SNAPSHOT.jar"]
